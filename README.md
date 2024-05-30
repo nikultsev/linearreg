@@ -1,2 +1,2 @@
-# nikslinearreg
-Nik's Linear Regression From First Principles
+# linearreg
+Linear Regression From First Principles
