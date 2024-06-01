@@ -1,3 +1,2 @@
-# linearregsss
+# linearreg
 Linear Regression From First Principles
-sdfdssdf
