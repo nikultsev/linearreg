@@ -54,12 +54,13 @@ def main():
     data = np.array([[1,3], [2,7], [0.5, 2.7], [10, 15], [-1, 0.3], [7, 8]])
     # data1 = [[1, 1], [2,2]]
     data = np.transpose(data)
-    lin = Linearreg(data[0], data[1], 0.05)
-    m, b = Linearreg.do_regression(lin)
+    lin = Linearreg(data[0,:], data[1,:], 0.01)
+    m, b = lin.do_regression()
     line_x = np.linspace(-10, 20, 50)
     model = lambda x: m*x + b
     
     print('This is final model:', m, b)
+    print(np.shape(data.transpose()))
     
     plt.scatter(data[0], data[1], marker = 'X', color = 'black')
     plt.plot(line_x, model(line_x))
